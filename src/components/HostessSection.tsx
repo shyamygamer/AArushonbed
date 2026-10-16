@@ -51,7 +51,8 @@ export const HostessSection: React.FC<HostessSectionProps> = ({ onOpenSurprise }
                       src={hostessImg}
                       alt="Fictional welcoming hostess in an elegant red blazer extending her hand at Aarush's comedy hotel"
                       className="h-full w-full object-cover object-[center_20%] transition-transform duration-700 group-hover:scale-105"
-                      loading="eager"
+                      loading="lazy"
+                      decoding="async"
                       referrerPolicy="no-referrer"
                     />
                     {/* Subtle warm vignette overlay */}

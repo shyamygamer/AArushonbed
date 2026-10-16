@@ -54,8 +54,8 @@ export const ConfettiCanvas: React.FC<ConfettiCanvasProps> = ({
     resize();
     window.addEventListener('resize', resize);
 
-    // Generate ~120 particles for optimal performance on mobile and desktop
-    const count = window.innerWidth < 640 ? 70 : 130;
+    // Optimized particle count for silky smooth 60fps on mobile and desktop
+    const count = window.innerWidth < 640 ? 45 : 85;
     const particles: Particle[] = [];
 
     for (let i = 0; i < count; i++) {

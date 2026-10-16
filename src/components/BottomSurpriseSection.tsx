@@ -18,6 +18,8 @@ export const BottomSurpriseSection: React.FC<BottomSurpriseSectionProps> = ({ on
           src={bedSceneImg}
           alt="Arush on bed comedy parody scene with girl and man lounging in five-star suite"
           className="h-full w-full object-cover object-center opacity-20 pointer-events-none scale-105"
+          loading="lazy"
+          decoding="async"
           referrerPolicy="no-referrer"
         />
         {/* Subtle dark gradient overlay to ensure perfect text readability */}

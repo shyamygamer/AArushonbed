@@ -15,6 +15,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenSurprise }) => {
           src={hotelHeroImg}
           alt="Cinematic luxury penthouse suite comedy backdrop"
           className="h-full w-full object-cover object-center opacity-30 scale-105 transition-transform duration-1000"
+          loading="eager"
+          decoding="async"
           referrerPolicy="no-referrer"
         />
         {/* Gradients to blend midnight black, deep crimson, and royal gold ambiance */}
